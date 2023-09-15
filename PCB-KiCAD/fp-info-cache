@@ -1,0 +1,141 @@
+31848336954336
+LED_multiplexer
+BNC_coax_Horizontal
+dual independently isolated BNC plug (https://www.amphenolrf.com/downloads/dl/file/id/2980/product/644/031_6575_customer_drawing.pdf)
+Dual BNC Amphenol Horizontal
+0
+5
+2
+LED_multiplexer
+BNC_coax_Horizontal_c
+dual independently isolated BNC plug (https://www.amphenolrf.com/downloads/dl/file/id/2980/product/644/031_6575_customer_drawing.pdf)
+Dual BNC Amphenol Horizontal
+0
+5
+2
+LED_multiplexer
+BNC_coax_Horizontal_c2
+dual independently isolated BNC plug (https://www.amphenolrf.com/downloads/dl/file/id/2980/product/644/031_6575_customer_drawing.pdf)
+Dual BNC Amphenol Horizontal
+0
+5
+2
+LED_multiplexer
+DIP-18_W7.62mm_LongPads_half
+18-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
+THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
+0
+15
+15
+LED_multiplexer
+LED_SMB1N_5x5mm2
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LED_SMB1N_5x5mm2_v2
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LED_SMB1N_5x5mm_HS_left
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LED_SMB1N_5x5mm_HS_right
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LED_SMB1N_5x5mm_sep_HS_left
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LED_SMB1N_5x5mm_sep_HS_right
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LED_SMB1N_8x8mm_HS_left
+5.0mm x 5.0mm PLCC4 LED
+LED Cree PLCC-4
+0
+2
+2
+LED_multiplexer
+LM317
+SIPAK, Vertical, RM 2.286mm
+SIPAK Vertical RM 2.286mm
+0
+3
+3
+LED_multiplexer
+LM317_half
+SIPAK, Vertical, RM 2.286mm
+SIPAK Vertical RM 2.286mm
+0
+2
+2
+LED_multiplexer
+NPN_tht_Inline_4mm2
+TO-92 leads in-line, wide, drill 0.75mm (see NXP sot054_po.pdf)
+to-92 sc-43 sc-43a sot54 PA33 transistor
+0
+3
+3
+LED_multiplexer
+PinHeader_1x02_P2.00mm_Vertical
+Through hole straight pin header, 1x02, 2.00mm pitch, single row
+Through hole pin header THT 1x02 2.00mm single row
+0
+4
+4
+LED_multiplexer
+PinHeader_1x02_P2.00mm_Vertical_hampus
+Through hole straight pin header, 1x02, 2.00mm pitch, single row
+Through hole pin header THT 1x02 2.00mm single row
+0
+4
+2
+LED_multiplexer
+Pin_D1.0mm_L10.0mm
+solder Pin_ diameter 1.0mm, hole diameter 1.0mm (press fit), length 10.0mm
+solder Pin_ press fit
+0
+1
+1
+LED_multiplexer
+R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical_half
+Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=2.54mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Vertical pin pitch 2.54mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+1
+1
+LED_multiplexer
+TO-3P-pnp
+TO-3P-3, Vertical, RM 5.45mm, , see https://toshiba.semicon-storage.com/ap-en/design-support/package/detail.TO-3P(N).html
+TO-3P-3 Vertical RM 5.45mm 
+0
+3
+3
+LED_multiplexer
+pnp
+
+
+0
+3
+3

@@ -1,0 +1,409 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 5906 4921
+encoding utf-8
+Sheet 1 1
+Title "LED multiplexer"
+Date ""
+Rev "v01"
+Comp ""
+Comment1 "Author: Hampus Månefjord"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 1400 2550
+Wire Wire Line
+	1400 2900 1400 2550
+Wire Wire Line
+	3300 2900 3300 2400
+Connection ~ 1400 1200
+$Comp
+L LED_multiplexer:TBD62084A Switch
+U 1 1 5E000444
+P 3300 1800
+F 0 "Switch" H 3300 2639 50  0000 C CNN
+F 1 "TBD62084A" H 3300 2548 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_LongPads" H 3300 1250 50  0001 C CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 3000 2200 50  0001 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 1200
+Wire Wire Line
+	3300 1200 3300 1300
+Wire Wire Line
+	2250 1200 3300 1200
+$Comp
+L Regulator_Linear:LM317L_TO92 CurrentSource1
+U 1 1 5E323C89
+P 4300 950
+F 0 "CurrentSource1" H 4300 1192 50  0000 C CNN
+F 1 "LM 317" H 4300 1101 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4300 1175 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 4300 950 50  0001 C CNN
+	1    4300 950 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DFB79BD
+P 3800 950
+F 0 "R3" V 3949 996 50  0000 C CNN
+F 1 "12.5" V 3870 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3730 950 50  0001 C CNN
+F 3 "~" H 3800 950 50  0001 C CNN
+	1    3800 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Regulator_Linear:LM317L_TO92 CurrentSource2
+U 1 1 5E327B33
+P 4300 2650
+F 0 "CurrentSource2" H 4300 2892 50  0000 C CNN
+F 1 "LM 317" H 4300 2801 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4300 2875 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 4300 2650 50  0001 C CNN
+	1    4300 2650
+	-1   0    0    1   
+$EndComp
+Text Notes 4400 650  0    50   ~ 0
++18V DC
+Text Notes 1050 700  0    50   ~ 0
++18V DC
+Text Notes 4050 1200 2    50   ~ 0
+100 mA
+Text Notes 4000 2450 2    50   ~ 0
+500 mA
+Wire Wire Line
+	2850 2400 2850 2850
+Wire Wire Line
+	4500 1900 4500 2000
+Connection ~ 4500 1900
+Wire Wire Line
+	4500 1800 4500 1900
+Wire Wire Line
+	1750 1800 1750 2850
+Wire Wire Line
+	2850 2850 1750 2850
+Wire Wire Line
+	2750 2400 2850 2400
+$Comp
+L LED_multiplexer:IC4017 DecCounter
+U 1 1 5E006888
+P 2250 2000
+F 0 "DecCounter" H 2277 2981 50  0000 C CNN
+F 1 "IC4017" H 2250 2890 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2250 2000 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 2250 2000 50  0001 C CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2200 2750 2200
+Wire Wire Line
+	2900 2100 2750 2100
+Wire Wire Line
+	2900 2000 2750 2000
+Wire Wire Line
+	2900 1900 2750 1900
+Wire Wire Line
+	2900 1800 2750 1800
+Wire Wire Line
+	2900 1700 2750 1700
+Wire Wire Line
+	2900 1600 2750 1600
+Wire Wire Line
+	2900 1500 2750 1500
+Connection ~ 1400 1600
+Wire Wire Line
+	1400 1500 1400 1600
+Connection ~ 1750 1200
+Wire Wire Line
+	1400 1200 1750 1200
+Wire Wire Line
+	1300 2550 1400 2550
+Wire Wire Line
+	1100 2250 1100 2350
+Wire Wire Line
+	1100 1900 1100 1950
+$Comp
+L Device:R R1
+U 1 1 5DFD16E3
+P 1100 2100
+F 0 "R1" V 893 2100 50  0000 C CNN
+F 1 "4k7" V 984 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1030 2100 50  0001 C CNN
+F 3 "~" H 1100 2100 50  0001 C CNN
+	1    1100 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 NPN1
+U 1 1 5E31EB60
+P 1300 1900
+F 0 "NPN1" H 1490 1946 50  0000 L CNN
+F 1 "BC547" H 1490 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 1500 1825 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 1300 1900 50  0001 L CNN
+	1    1300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial BNC1
+U 1 1 5DFCCCA6
+P 1100 2550
+F 0 "BNC1" H 1028 2788 50  0000 C CNN
+F 1 "Coaxial" H 1028 2697 50  0000 C CNN
+F 2 "LED_multiplexer:BNC_coax_Horizontal_c2" H 1100 2550 50  0001 C CNN
+F 3 " ~" H 1100 2550 50  0001 C CNN
+	1    1100 2550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1400 2100 1400 2550
+Wire Wire Line
+	1400 1600 1400 1700
+Wire Wire Line
+	1750 1600 1400 1600
+Wire Wire Line
+	1750 1200 2250 1200
+Wire Wire Line
+	1750 1500 1750 1200
+$Comp
+L power:GND #PWR05
+U 1 1 5DFCBED2
+P 1400 2900
+F 0 "#PWR05" H 1400 2650 50  0001 C CNN
+F 1 "GND" H 1405 2727 50  0000 C CNN
+F 2 "" H 1400 2900 50  0001 C CNN
+F 3 "" H 1400 2900 50  0001 C CNN
+	1    1400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DFCA9A7
+P 1400 1350
+F 0 "R2" H 1470 1396 50  0000 L CNN
+F 1 "4k7" H 1470 1305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1330 1350 50  0001 C CNN
+F 3 "~" H 1400 1350 50  0001 C CNN
+	1    1400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2100 3850 2100
+Wire Wire Line
+	3700 2000 4200 2000
+Wire Wire Line
+	3700 1900 3850 1900
+Wire Wire Line
+	3700 1800 4200 1800
+Wire Wire Line
+	3700 1700 3850 1700
+Wire Wire Line
+	3700 1600 4200 1600
+Wire Wire Line
+	3700 1500 3850 1500
+Wire Wire Line
+	4500 2200 4500 2100
+Wire Wire Line
+	4150 2100 4500 2100
+Connection ~ 4500 1700
+Connection ~ 4500 1600
+Wire Wire Line
+	4500 1600 4500 1700
+Connection ~ 4500 1800
+Wire Wire Line
+	4150 1900 4500 1900
+Wire Wire Line
+	4500 1700 4500 1800
+Wire Wire Line
+	4150 1700 4500 1700
+Wire Wire Line
+	4500 1500 4500 1600
+Wire Wire Line
+	4150 1500 4500 1500
+$Comp
+L power:VCC #PWR010
+U 1 1 5DFBFEB9
+P 4650 800
+F 0 "#PWR010" H 4650 650 50  0001 C CNN
+F 1 "VCC" H 4667 973 50  0001 C CNN
+F 2 "" H 4650 800 50  0001 C CNN
+F 3 "" H 4650 800 50  0001 C CNN
+	1    4650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5DFBF6F6
+P 1400 800
+F 0 "#PWR08" H 1400 650 50  0001 C CNN
+F 1 "VCC" H 1417 973 50  0001 C CNN
+F 2 "" H 1400 800 50  0001 C CNN
+F 3 "" H 1400 800 50  0001 C CNN
+	1    1400 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5DFBD446
+P 3300 2900
+F 0 "#PWR09" H 3300 2650 50  0001 C CNN
+F 1 "GND" H 3305 2727 50  0000 C CNN
+F 2 "" H 3300 2900 50  0001 C CNN
+F 3 "" H 3300 2900 50  0001 C CNN
+	1    3300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DFBCF56
+P 2250 2900
+F 0 "#PWR07" H 2250 2650 50  0001 C CNN
+F 1 "GND" H 2255 2727 50  0000 C CNN
+F 2 "" H 2250 2900 50  0001 C CNN
+F 3 "" H 2250 2900 50  0001 C CNN
+	1    2250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DFB6A05
+P 3800 2650
+F 0 "R4" V 3949 2696 50  0000 R CNN
+F 1 "2.5" V 3870 2584 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3730 2650 50  0001 C CNN
+F 3 "~" H 3800 2650 50  0001 C CNN
+	1    3800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5DFB5063
+P 4000 2100
+F 0 "D4" H 3993 2316 50  0001 C CNN
+F 1 "LED" H 3993 2225 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_left" H 4000 2100 50  0001 C CNN
+F 3 "~" H 4000 2100 50  0001 C CNN
+	1    4000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5DFB5059
+P 4350 2000
+F 0 "D7" H 4343 2216 50  0001 C CNN
+F 1 "LED" H 4343 2125 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_left" H 4350 2000 50  0001 C CNN
+F 3 "~" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5DFB504F
+P 4000 1900
+F 0 "D3" H 3993 2116 50  0001 C CNN
+F 1 "LED" H 3993 2025 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_right" H 4000 1900 50  0001 C CNN
+F 3 "~" H 4000 1900 50  0001 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5DFAD86D
+P 4350 1800
+F 0 "D6" H 4343 2016 50  0001 C CNN
+F 1 "LED" H 4343 1925 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_right" H 4350 1800 50  0001 C CNN
+F 3 "~" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DFAD863
+P 4000 1700
+F 0 "D2" H 3993 1916 50  0001 C CNN
+F 1 "LED" H 3993 1825 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_right" H 4000 1700 50  0001 C CNN
+F 3 "~" H 4000 1700 50  0001 C CNN
+	1    4000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5DFACD24
+P 4350 1600
+F 0 "D5" H 4343 1816 50  0001 C CNN
+F 1 "LED" H 4343 1725 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_right" H 4350 1600 50  0001 C CNN
+F 3 "~" H 4350 1600 50  0001 C CNN
+	1    4350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2200 4200 2200
+$Comp
+L Device:LED D8
+U 1 1 5DFB506D
+P 4350 2200
+F 0 "D8" H 4343 2416 50  0001 C CNN
+F 1 "LED" H 4343 2325 50  0001 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_left" H 4350 2200 50  0001 C CNN
+F 3 "~" H 4350 2200 50  0001 C CNN
+	1    4350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2650 4600 2650
+Wire Wire Line
+	4000 2650 3950 2650
+Wire Wire Line
+	3650 2650 3650 2350
+Wire Wire Line
+	3650 2350 4300 2350
+Wire Wire Line
+	4300 2350 4500 2350
+Wire Wire Line
+	4500 2350 4500 2200
+Connection ~ 4300 2350
+Connection ~ 4500 2200
+$Comp
+L Device:LED D1
+U 1 1 5DFAC08F
+P 4000 1500
+F 0 "D1" H 3993 1716 50  0001 C CNN
+F 1 "LED 365nm-940nm" H 4032 1625 50  0000 C CNN
+F 2 "LED_multiplexer:LED_SMB1N_5x5mm_HS_right" H 4000 1500 50  0001 C CNN
+F 3 "~" H 4000 1500 50  0001 C CNN
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 950  3950 950 
+Wire Wire Line
+	3650 950  3650 1250
+Wire Wire Line
+	4500 1250 4500 1500
+Connection ~ 4500 1500
+Wire Wire Line
+	1400 800  1400 1200
+Connection ~ 4300 1250
+Wire Wire Line
+	4650 800  4650 950 
+Wire Wire Line
+	4300 1250 4500 1250
+Wire Wire Line
+	4600 950  4650 950 
+Connection ~ 4650 950 
+Wire Wire Line
+	4650 950  4650 2650
+Wire Wire Line
+	3650 1250 4300 1250
+$EndSCHEMATC
